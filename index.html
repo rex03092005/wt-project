@@ -1,0 +1,312 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Disney+ Clone</title>
+    <link rel="stylesheet" alt="this is a img" href="project.css" />
+    <link rel="shortcut icon"
+        href="data:image/jpeg;base64,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"
+
+        type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="Assets/disney_img/disney.PNG" class="brand-logo" alt="Logo" />
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#">Tv</a></li>
+            <li class="nav-items"><a href="#">Movies</a></li>
+            <li class="nav-items"><a href="#">Sports</a></li>
+            <li class="nav-items"><a href="#">login</a></li>
+            <li class="nav-items"><a href="#">Premium</a></li>
+        </ul>
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="Search" />
+            <button class="sub-btn">subscribe</button>
+            <a href="#" class="login-link">Login</a>
+
+        </div>
+    </nav>
+
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- <div class="slider">
+                <div class="slider-content">
+                    <h1 class="movie-title">Loki</h1>
+                    <p class="movie-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat rerum iusto
+                        vero modi eum repellendus?</p>
+                </div>
+                <img src="Assets/disney_img/slider 1.PNG" alt="slider1-img" />
+
+            </div> -->
+        </div>
+
+    </div>
+    <div class="video-card-container">
+        <div class="video-card">
+            <img src="Assets/disney_img/disney.PNG" class="video-card-image" alt="disney-img">
+            <video src="Assets/disney+_videos/disnep.mp4" class="card-video" muted loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="Assets/disney_img/pixar.PNG" class="video-card-image" alt="pixar-img">
+            <video src="Assets/disney+_videos/pixar.mp4" class="card-video" muted loop class="pixar-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="Assets/disney_img/marvel.PNG" class="video-card-image" alt="marvel-img">
+            <video src="Assets/disney+_videos/marvel.mp4" class="card-video" muted loop class="marvel-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="Assets/disney_img/star-wars.PNG" class="video-card-image" alt="star-wars-img">
+            <video src="Assets/disney+_videos/starWars.mp4" class="card-video" muted loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="Assets/disney_img/geographic.PNG" class="video-card-image" alt="geographic-img">
+            <video src="Assets/disney+_videos/nationalGeographic.mp4" class="card-video" muted loop class="geographic-video"></video>
+        </div>
+
+    </div>
+
+    <h1 class="title">Recommended for you</h1>
+    <div class="movie-list">
+        <button class="pre-btn" title="btn"><img src="Assets/disney_img/pre.png" alt="pre-button"></button>
+        <button class="nxt-btn" title="btn"><img src="Assets/disney_img/nxt.png" alt="next-button"></button>
+        <div class="card-container">
+
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 1.png" alt="poster 1">
+                <div class="card-body">
+                    <h2 class="name">Loki</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 2.png" alt="poster 2">
+                <div class="card-body">
+                    <h2 class="name">Mulan</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 3.png " alt="poster 3">
+                <div class="card-body">
+                    <h2 class="name">The falcon and the Winter Soilder</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 4.png" alt="poster 4">
+                <div class="card-body">
+                    <h2 class="name">Avengers Endgame</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 5.png" alt="poster 5">
+                <div class="card-body">
+                    <h2 class="name">Thor Ragnarok</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 6.png" alt="poster 6">
+                <div class="card-body">
+                    <h2 class="name">Avengers</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 7.png" alt="poster 7">
+                <div class="card-body">
+                    <h2 class="name">Pirates of the Carribian Salazar's Revenge</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 8.png" alt="poster 8">
+                <div class="card-body">
+                    <h2 class="name">Soul</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 9.png" alt="poster 9">
+                <div class="card-body">
+                    <h2 class="name">Raya the last Dragon</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 10.png" alt="poster 10">
+                <div class="card-body">
+                    <h2 class="name">Luca</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 11.png" alt="poster 11">
+                <div class="card-body">
+                    <h2 class="name">Ford vs Ferrari</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>ss
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 12.png" alt="poster 12">
+                <div class="card-body">
+                    <h2 class="name">Dark Phoenix</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <h1 class="title">Popular Shows</h1>
+    <div class="movie-list">
+        <button class="pre-btn" title="btn"><img src="Assets/disney_img/pre.png" alt="pre-button"></button>
+        <button class="nxt-btn" title="btn"><img src="Assets/disney_img/nxt.png" alt="next-button"></button>
+        <div class="card-container">
+
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 12.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Dark Phoenix</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 11.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Ford vs Ferrari</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 10.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Luca</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 9.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Raya the last Dragon</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 8.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Soul</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 7.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Pirates of the Carribian Salazar's Revenge</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 6.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Avengers</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 5.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Thor Ragnarok</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 4.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Avengers Endgame</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 3.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">The falcon and the Winter Soilder</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 2.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Mulan</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="Assets/disney_img/poster 1.png" alt="">
+                <div class="card-body">
+                    <h2 class="name">Loki</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet.</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="left-footer">
+            <ul class="footer-links">
+                <li class="footer-items"><a href="#">About Disney+Hotstar</a></li>
+                <li class="footer-items"><a href="#">Terms Of Use</a></li>
+                <li class="footer-items"><a href="#">Privacy Policy</a></li>
+                <li class="footer-items"><a href="#">FAQ</a></li>
+                <li class="footer-items"><a href="#">Feedback</a></li>
+                <li class="footer-items"><a href="#">Carrers</a></li>
+            </ul>
+            <p class="copyright">
+                &copy; 2022 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming
+                logos are service marks of, and all related programming visuals and elements are the property of, Home
+                Box Office, Inc. All rights reserved.
+           </p>
+       
+    </footer>
+    <script src="project.js"></script>
+
+
+
+</body>
+
+</html>
